@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/vetor.png" class="vetor">
+    </header>
+    <main>
+        <div>
+
+            <label for="mensagem-usuario"></label>
+            <textarea type="text" cols="40" rows="10" id="mensagem-usuario" required placeholder="Digite seu texto" required ></textarea>
+
+        </div>
+        <div>
+            <img src="img/garoto_lupa.svg" class="resposta">
+            <button onclick="copiar()" class="copiar">Copiar</button> 
+            <textarea type="text"  cols="40" rows="10" id="texto-criptografado" disabled placeholder="Nenhuma mensagem encontrada" ></textarea>
+          
+        </div>
+        
+        <div id="botoes">
+            <p id="alerta"> <img src="img/esclamacao.png">Apenas letras minúsculas e sem acento.</p>
+            <button onclick="criptografar()" class="criptografar">Criptografar</button>
+            <button onclick="decriptografar()" class="decodificador">Decriptografar</button>
+            
+
+        </div>
+    </main>
+</body>
+
+<script src="criptografar.js"> </script>   
+
+</html>

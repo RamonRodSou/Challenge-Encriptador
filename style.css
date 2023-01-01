@@ -1,0 +1,133 @@
+body {
+
+    background: #E5E5E5;
+    margin: 0 auto;
+    width: 1300px;
+
+}
+
+.vetor {
+
+    margin: 20px 20px;
+}
+
+main {
+
+    display: inline;
+
+}
+
+
+
+#mensagem-usuario {
+
+    background: #E5E5E5;
+    border: none;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 32px;
+    line-height: 130%;
+    margin: 3% 8%;
+    resize: none;
+    text-transform: lowercase;
+
+}
+
+#mensagem-usuario::placeholder {
+
+    color: #02387a;
+}
+
+
+
+#texto-criptografado {
+
+    position: absolute;
+    width: 360px;
+    top: 30px;
+    height: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin: 0 40px;
+    left: 60%;
+    padding: 40px 20px;
+    resize: none;
+    text-align: center;     
+    text-transform: lowercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 32px;
+    color: #0A3871;  
+}
+
+#texto-criptografado::placeholder {
+
+ 
+  color:#0A3871;
+  position: absolute;
+  top:450px;
+  font-size: 32px;
+  font-weight: bold;
+ 
+
+}
+
+#botoes {
+
+    position: absolute;
+    box-sizing: border-box;
+    margin: 1% 6%;
+
+}
+
+.criptografar {
+
+    width: 300px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-size: 22px;
+    color: #FFFFFF;
+
+
+}
+
+.decodificador {
+
+    width: 300px;
+    height: 67px;
+    background: #76aaea;
+    border-radius: 24px;
+    border: #0A3871;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.copiar {
+
+    position: absolute;
+    width: 300px;
+    height: 67px;
+    background: #1c1b1b;
+    border-radius: 24px;
+    border: #1364c8;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 0 40px;
+    left: 60%;
+    top:340px ;
+}
+
+.resposta {
+
+    position: absolute;
+    top: 300px;
+    margin: 0 40px;
+    left: 60%;
+}
+    
+
