@@ -3,7 +3,6 @@ body {
     background: #E5E5E5;
     margin: 0 auto;
     width: 1300px;
-
 }
 
 .vetor {
@@ -14,10 +13,7 @@ body {
 main {
 
     display: inline;
-
 }
-
-
 
 #mensagem-usuario {
 
@@ -32,7 +28,6 @@ main {
     margin: 3% 8%;
     resize: none;
     text-transform: lowercase;
-
 }
 
 #mensagem-usuario::placeholder {
@@ -40,9 +35,8 @@ main {
     color: #02387a;
 }
 
-
-
-#texto-criptografado {
+.texto-criptografado,
+.texto-sobrepor {
 
     position: absolute;
     width: 360px;
@@ -55,25 +49,60 @@ main {
     left: 60%;
     padding: 40px 20px;
     resize: none;
-    text-align: center;     
+    text-align: center;
     text-transform: lowercase;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300px;
     font-size: 32px;
-    color: #0A3871;  
+    color: #0A3871;
 }
 
-#texto-criptografado::placeholder {
-
- 
+/*#texto-sobrepor::placeholder {    // Tinhca colocado esse placeholder para colocar a mensagem1 porem achei 
+                                        mas facil declarar um <p> e criar outro id, sem a necessidade do placeholde
+                                        e fazendo a remoção do mesmo no JavaScript
   color:#0A3871;
   position: absolute;
   top:450px;
   font-size: 32px;
   font-weight: bold;
  
+} */
 
+.texto-sobrepor-none {
+
+    display: none;
+}
+
+.mensagem1 {
+
+    color: #0A3871;
+    position: absolute;
+    top: 430px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 40px;
+    padding: 40px 20px;
+    left: 60%;
+    text-align: center;
+    width: 360px;
+}
+
+.mensagem2 {
+
+    color: #495057;
+    position: absolute;
+    top: 520px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 40px;
+    padding: 40px 20px;
+    left: 60%;
+    text-align: center;
+    width: 360px;
 }
 
 #botoes {
@@ -81,7 +110,6 @@ main {
     position: absolute;
     box-sizing: border-box;
     margin: 1% 6%;
-
 }
 
 .criptografar {
@@ -90,44 +118,75 @@ main {
     height: 67px;
     background: #0A3871;
     border-radius: 24px;
+    border: 1px solid #a7c3f0;
+    border-width: 1px;
     font-size: 22px;
-    color: #FFFFFF;
-
-
+    color: #ffffff;
+    cursor: pointer;
 }
 
-.decodificador {
+.decriptografar {
 
     width: 300px;
     height: 67px;
-    background: #76aaea;
+    background: #D8DFE8;
     border-radius: 24px;
-    border: #0A3871;
+    border: 1px solid #a7c3f0;
     font-size: 22px;
-    color: #FFFFFF;
+    color: #0A3871;
+    cursor: pointer;
 }
 
-.copiar {
+.copiarMensagem {
 
     position: absolute;
     width: 300px;
     height: 67px;
-    background: #1c1b1b;
+    background: #FFFFFF;
     border-radius: 24px;
-    border: #1364c8;
-    font-size: 22px;
-    color: #FFFFFF;
+    border: 1px solid #a7c3f0;
     margin: 0 40px;
-    left: 60%;
-    top:340px ;
+    font-size: 22px;
+    color: #0A3871;
+    margin: 25px 40px;
+    left: 63%;
+    cursor: pointer;
+
+}
+
+.criptografar:active {
+
+    background: #548ce7;
+}
+
+.decriptografar:active {
+
+    background: #548ce7;
+}
+
+.copiarMensagem:active {
+
+    background: #a7c0e8;
 }
 
 .resposta {
 
     position: absolute;
-    top: 300px;
+    top: 180px;
     margin: 0 40px;
     left: 60%;
 }
-    
 
+.resposta2 {
+
+    display: none;
+}
+.notmensage {
+
+    display: none;
+}
+
+.notmensage2 {
+
+    display: none;
+}
