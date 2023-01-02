@@ -56,6 +56,8 @@ main {
     font-weight: 300px;
     font-size: 32px;
     color: #0A3871;
+    transition: 1s background ;
+
 }
 
 /*#texto-sobrepor::placeholder {    // Tinhca colocado esse placeholder para colocar a mensagem1 porem achei 
@@ -108,7 +110,6 @@ main {
 #botoes {
 
     position: absolute;
-    box-sizing: border-box;
     margin: 1% 6%;
 }
 
@@ -123,6 +124,7 @@ main {
     font-size: 22px;
     color: #ffffff;
     cursor: pointer;
+    transition: 300ms background ;
 }
 
 .decriptografar {
@@ -135,6 +137,7 @@ main {
     font-size: 22px;
     color: #0A3871;
     cursor: pointer;
+    transition: 300ms background ;
 }
 
 .copiarMensagem {
@@ -151,6 +154,7 @@ main {
     margin: 25px 40px;
     left: 63%;
     cursor: pointer;
+    transition: 300ms background ; 
 
 }
 
@@ -180,6 +184,7 @@ main {
 .resposta2 {
 
     display: none;
+    
 }
 .notmensage {
 

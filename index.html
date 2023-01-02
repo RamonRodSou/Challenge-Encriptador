@@ -14,27 +14,30 @@
         <img src="img/vetor.png" class="vetor">
     </header>
     <main>
-        <div>
+        <section>
             <label for="mensagem-usuario"></label>
             <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto" required></textarea>
-        </div>
-            <div>
-                <textarea type="text" cols="40" rows="10" class="texto-criptografado" disabled></textarea>
-                <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
-            </div> 
-            <div>    
-                <textarea type="text" cols="40" rows="10" class="texto-sobrepor" disabled></textarea> 
-                <img src="img/garoto_lupa.svg" class="resposta">
-                <p class="mensagem1"> Nenhuma mensagem encontrada</p>
-                <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div><!--placeholder="Nenhuma mensagem encontrada"-->
+        </section>
+        <section>
+            <textarea type="text" cols="40" rows="10" class="texto-criptografado" disabled></textarea>
+            <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
+        </section>
+        <section>
+            <textarea type="text" cols="40" rows="10" class="texto-sobrepor" disabled></textarea> 
+            <img src="img/garoto_lupa.svg" class="resposta">
+            <p class="mensagem1"> Nenhuma mensagem encontrada</p>
+            <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <!--placeholder="Nenhuma mensagem encontrada"-->
+        </section>
         <div id="botoes">
             <p id="alerta"> <img src="img/esclamacao.png">Apenas letras minúsculas e sem acento.</p>
             <button onclick="criptografar()" class="criptografar">Criptografar</button>
             <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
-
         </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
 <script src="criptografar.js"> </script>
