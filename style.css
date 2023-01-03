@@ -6,37 +6,30 @@ body {
 }
 
 .logo-alura {
+    position: fixed;
+    margin: 2% 2% ;
+    width: 3%;
+    height: 8%;
 
-    margin: 20px 20px;
 }
 
 /* Local das minhas redes sóciais para contato */
 
 .minhas-redes {
 
-    position: absolute;
-    background: #5488c3;
+    position: fixed ;
+    background: #5488c32a;
     width:65px ;
-    height: 120%;
+    height:70%;
     left: 0;
-    top: 0;
+    top: 15%;
     transform: 100ms;
+    border-radius: 30px;
+    transition: 1s background;
+
 }
 
 .github{
-
-    position: absolute;
-    width: 40px;
-    top:25%;
-    margin: 10px;
-    border: 1px solid rgba(6, 38, 98, 0.468);
-    border-radius: 5px;
-    transform: 500ms;
-    cursor: pointer;
-
-}
-
-.linkdin{
 
     position: absolute;
     width: 40px;
@@ -44,12 +37,12 @@ body {
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
-    transform: 900ms;
+    transition: 1s background;
     cursor: pointer;
-
+    opacity: 0.3;
 }
 
-.whatsapp{
+.linkdin{
 
     position: absolute;
     width: 40px;
@@ -57,31 +50,66 @@ body {
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
-    transform: 900ms;
+    transition: 1s background;
     cursor: pointer;
+    opacity: 0.3;
+
+}
+
+.whatsapp{
+
+    position: absolute;
+    width: 40px;
+    top:55%;
+    margin: 10px;
+    border: 1px solid rgba(6, 38, 98, 0.468);
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+    opacity: 0.3;
+
+
+}
+
+.minhas-redes:hover {
+
+    background: #5488c3;
+    opacity: 1;
 
 }
 
 .github:hover,.linkdin:hover,.whatsapp:hover {
 
     background: #cedcea;
+    opacity: 1;
+
+}
+
+.github:active,.linkdin:active,.whatsapp:active {
+
+    background: #0ae469;
 }
 /* Local onde o usúario digita seu texto */
 
 #mensagem-usuario {
 
-    display: block;
-    background: #E5E5E5;
+    position: fixed;
+    background: #e5e5e500;
     border: none;
     color: #0A3871;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 26px 0;
     font-size: 2em;
-    line-height: 70%;
     margin: 3% 8%;
     resize: none;
+    overflow:auto;
     text-transform: lowercase;
+    width: 44%;
+    height: 40%;
+    left: 10%;
+    top: 15%;
+
 }
 
 #mensagem-usuario::placeholder {
@@ -94,29 +122,30 @@ body {
 .texto-criptografado,
 .texto-sobrepor {
 
-    position: absolute;
+    position: fixed;
     top: 30px;
-    bottom: 2%;
+    end: 2%;
    /* 
     width: 350px;
     height: 600px;*/
-    
-    width: 23%;
-    height: 83%;
+
+    width: 20%;
+    height: 75%;
 
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    margin: 0 40px;
-    left: 69%;
+    margin: 0 4% 4% 0;
+    left: 72%;
     padding: 40px 20px;
     resize: none;
+    overflow:auto;
     text-align: center;
     text-transform: lowercase;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300px;
-    font-size: 32px;
+    font-size: 2em;
     color: #0A3871;
     transition: 1s background ;
 
@@ -126,24 +155,24 @@ body {
 
 .garoto_lupa {
 
-    position: absolute;
-    top: 20%;
-    margin: 0 40px;
-    left: 69%;
-    width: 25%;
+    position: fixed;
+    top: 15%;
+    margin: 0 4% 4% 0;
+    left: 72%;
+    width: 23%;
 }
 
 .mensagem1 {
 
     color: #0A3871;
-    position: absolute;
-    top: 60%;
+    position: fixed;
+    top: 55%;
     font-family: 'Inter';
-    font-size: 32px;
+    font-size: 2em;
     font-weight: bold;
-    margin: 0 40px;
-    padding: 40px 20px;
-    left: 69%;
+    margin: 0 4% 4% 0;
+    padding: 4% 2%;
+    left: 70%;
     text-align: center;
     width: 23%;
 }
@@ -151,32 +180,50 @@ body {
 .mensagem2 {
 
     color: #495057;
-    position: absolute;
-    top: 73%;
+    position: fixed;
+    top: 69%;
     font-family: 'Inter';
     font-style: normal;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    margin: 0 40px;
-    padding: 40px 20px;
-    left: 72%;
+    margin: 0 4% 4% 0;
+    padding: 4% 2%;
+    left: 72.5%;
     text-align: center;
     width: 18%;
 }
 
 /* Local destinado aos botões*/
 
+
 #botoes {
-    position: absolute;
-    width: 1300px;
-    bottom: 1%;
-    left: 16%;
+
+    width: 60%;
+    height: 13%;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 15%;
+    text-align: center;
+    left: 10%;
+    bottom: 9%;
+}
+
+#alerta {
+    position: fixed;
+    width: 60%;
+    height: 13%;
+    margin: 0 auto;
+    bottom: 15%;
+    left: 20%;
+    bottom: 12%;
+    margin: 0 2% 0 2%;
+
 }
 
 .criptografar {
 
-    width: 23%;
-    height: 67px;
+    width: 30%;
+    height: 70%;
     background: #0A3871;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
@@ -185,13 +232,13 @@ body {
     color: #ffffff;
     cursor: pointer;
     transition: 300ms background ;
+
 }
 
 .decriptografar {
-
-    position: absolute;
-    width: 23%;
-    height: 67px;
+   
+    width: 30%;
+    height: 70%;
     margin-left: 20px;
     background: #D8DFE8;
     border-radius: 24px;
@@ -199,27 +246,41 @@ body {
     font-size: 22px;
     color: #0A3871;
     cursor: pointer;
-    transition: 300ms background
-
+    transition: 300ms background;
 }
 
 .copiarMensagem {
 
-    position: absolute;
-    width: 20%;
+    position: fixed;
+    width: 20.5%;
     height: 67px;
     background: #FFFFFF;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
-    margin: 0 40px;
     font-size: 22px;
     color: #0A3871;
-    margin: 15px 39px;
     left: 72%;
-    bottom: 1%;
-    cursor: pointer;
+    bottom: 10%;
     transition: 300ms background ; 
+    margin: auto 1% 1% 1%;
+    cursor: pointer;
+
 } 
+
+.criptografar:hover {
+
+    background: #0a3871d6;
+}
+
+.decriptografar:hover {
+
+    background: #c0cee0;
+}
+
+.copiarMensagem:hover {
+
+    background: #97b7ef29;
+}
 
 .criptografar:active {
 
@@ -263,21 +324,22 @@ e os paragrafos para local da mensagem criptografada*/
 
 
 footer {
-    
-    background: #5488c3;
-    position: absolute;
+    position: fixed ;
+    background: #E5E5E5;
+    display: block;    
     left: 0;
-    bottom: -20%;
+    bottom: 0;
     width: 100%;
+    height: 0;
     text-align: center;
-	padding: 30px 0;
+	padding: 25px 0;
     margin: 0 auto;
 
 }
 
 .copyright {
 
-    color: #FFFFFF;
+    color: #000000a2;
 	font-size: 13px;
 }
  

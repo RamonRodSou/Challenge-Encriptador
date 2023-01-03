@@ -24,7 +24,7 @@
         <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"  required></textarea>
     </section>
     <section>
-        <textarea type="text" cols="40" rows="10" class="texto-criptografado" disabled></textarea>
+        <textarea type="text" cols="40" rows="10" class="texto-criptografado" ></textarea>
         <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
     </section>
     <section>
@@ -32,10 +32,9 @@
         <img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa">
         <p class="mensagem1"> Nenhuma mensagem encontrada</p>
         <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-        <!--placeholder="Nenhuma mensagem encontrada"-->
     </section>
+    <p id="alerta"> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem acento.
     <div id="botoes">
-        <p id="alerta"> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem acento.
         </p>
         <button onclick="criptografar()" class="criptografar">Criptografar</button>
         <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>

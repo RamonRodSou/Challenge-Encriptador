@@ -67,8 +67,17 @@ function criptografar() {
     }
 
     function copiarMensaguemCriptografada() {
+          
+            /* Deixamos o texto selecionado (em azul) */
+            mensagemCriptografada.select();
+            mensagemCriptografada.setSelectionRange(0, 99999); /* Para mobile */
 
-        document.execCommand("copy");
+            /* Copia o texto que está selecionado */
+            document.execCommand("copy");
 
+            alert("Texto copiado: " + mensagemCriptografada.value);
+        
+    
     }
+    
     
