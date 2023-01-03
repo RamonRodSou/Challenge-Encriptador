@@ -5,26 +5,80 @@ body {
     width: 1300px;
 }
 
-.vetor {
+.logo-alura {
 
     margin: 20px 20px;
 }
 
-main {
+/* Local das minhas redes sóciais para contato */
 
-    display: inline;
+.minhas-redes {
+
+    position: absolute;
+    background: #5488c3;
+    width:65px ;
+    height: 120%;
+    left: 0;
+    top: 0;
+    transform: 100ms;
 }
+
+.github{
+
+    position: absolute;
+    width: 40px;
+    top:25%;
+    margin: 10px;
+    border: 1px solid rgba(6, 38, 98, 0.468);
+    border-radius: 5px;
+    transform: 500ms;
+    cursor: pointer;
+
+}
+
+.linkdin{
+
+    position: absolute;
+    width: 40px;
+    top:35%;
+    margin: 10px;
+    border: 1px solid rgba(6, 38, 98, 0.468);
+    border-radius: 5px;
+    transform: 900ms;
+    cursor: pointer;
+
+}
+
+.whatsapp{
+
+    position: absolute;
+    width: 40px;
+    top:45%;
+    margin: 10px;
+    border: 1px solid rgba(6, 38, 98, 0.468);
+    border-radius: 5px;
+    transform: 900ms;
+    cursor: pointer;
+
+}
+
+.github:hover,.linkdin:hover,.whatsapp:hover {
+
+    background: #cedcea;
+}
+/* Local onde o usúario digita seu texto */
 
 #mensagem-usuario {
 
+    display: block;
     background: #E5E5E5;
     border: none;
     color: #0A3871;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 300px;
-    font-size: 32px;
-    line-height: 130%;
+    font-weight: 26px 0;
+    font-size: 2em;
+    line-height: 70%;
     margin: 3% 8%;
     resize: none;
     text-transform: lowercase;
@@ -35,18 +89,26 @@ main {
     color: #02387a;
 }
 
+/* Local onde aparece a mensagem criptografada */
+
 .texto-criptografado,
 .texto-sobrepor {
 
     position: absolute;
-    width: 360px;
     top: 30px;
-    height: 600px;
+    bottom: 2%;
+   /* 
+    width: 350px;
+    height: 600px;*/
+    
+    width: 23%;
+    height: 83%;
+
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     margin: 0 40px;
-    left: 60%;
+    left: 69%;
     padding: 40px 20px;
     resize: none;
     text-align: center;
@@ -60,62 +122,60 @@ main {
 
 }
 
-/*#texto-sobrepor::placeholder {    // Tinhca colocado esse placeholder para colocar a mensagem1 porem achei 
-                                        mas facil declarar um <p> e criar outro id, sem a necessidade do placeholde
-                                        e fazendo a remoção do mesmo no JavaScript
-  color:#0A3871;
-  position: absolute;
-  top:450px;
-  font-size: 32px;
-  font-weight: bold;
- 
-} */
+/* Img e Paragrafos lado direito, local resposta */
 
-.texto-sobrepor-none {
+.garoto_lupa {
 
-    display: none;
+    position: absolute;
+    top: 20%;
+    margin: 0 40px;
+    left: 69%;
+    width: 25%;
 }
 
 .mensagem1 {
 
     color: #0A3871;
     position: absolute;
-    top: 430px;
+    top: 60%;
     font-family: 'Inter';
     font-size: 32px;
     font-weight: bold;
     margin: 0 40px;
     padding: 40px 20px;
-    left: 60%;
+    left: 69%;
     text-align: center;
-    width: 360px;
+    width: 23%;
 }
 
 .mensagem2 {
 
     color: #495057;
     position: absolute;
-    top: 520px;
+    top: 73%;
     font-family: 'Inter';
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
     margin: 0 40px;
     padding: 40px 20px;
-    left: 60%;
+    left: 72%;
     text-align: center;
-    width: 360px;
+    width: 18%;
 }
 
-#botoes {
+/* Local destinado aos botões*/
 
+#botoes {
     position: absolute;
-    margin: 1% 6%;
+    width: 1300px;
+    bottom: 1%;
+    left: 16%;
 }
 
 .criptografar {
 
-    width: 300px;
+    width: 23%;
     height: 67px;
     background: #0A3871;
     border-radius: 24px;
@@ -129,21 +189,24 @@ main {
 
 .decriptografar {
 
-    width: 300px;
+    position: absolute;
+    width: 23%;
     height: 67px;
+    margin-left: 20px;
     background: #D8DFE8;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
     font-size: 22px;
     color: #0A3871;
     cursor: pointer;
-    transition: 300ms background ;
+    transition: 300ms background
+
 }
 
 .copiarMensagem {
 
     position: absolute;
-    width: 300px;
+    width: 20%;
     height: 67px;
     background: #FFFFFF;
     border-radius: 24px;
@@ -151,12 +214,12 @@ main {
     margin: 0 40px;
     font-size: 22px;
     color: #0A3871;
-    margin: 25px 40px;
-    left: 63%;
+    margin: 15px 39px;
+    left: 72%;
+    bottom: 1%;
     cursor: pointer;
     transition: 300ms background ; 
-
-}
+} 
 
 .criptografar:active {
 
@@ -173,15 +236,11 @@ main {
     background: #a7c0e8;
 }
 
-.resposta {
 
-    position: absolute;
-    top: 180px;
-    margin: 0 40px;
-    left: 60%;
-}
+/* Local onde é substituido a parte inicial, do qual aparece o garoto da lupa 
+e os paragrafos para local da mensagem criptografada*/
 
-.resposta2 {
+.garoto_lupa2 {
 
     display: none;
     
@@ -195,3 +254,30 @@ main {
 
     display: none;
 }
+
+.texto-sobrepor-none {
+
+    display: none;
+
+}
+
+
+footer {
+    
+    background: #5488c3;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    width: 100%;
+    text-align: center;
+	padding: 30px 0;
+    margin: 0 auto;
+
+}
+
+.copyright {
+
+    color: #FFFFFF;
+	font-size: 13px;
+}
+ 

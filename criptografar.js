@@ -1,14 +1,14 @@
 var mensagemUsuario = document.querySelector("#mensagem-usuario");
 var mensagemCriptografada = document.querySelector(".texto-criptografado");
-var meninoDaLupa = document.querySelector(".resposta");
+var meninoDaLupa = document.querySelector(".garoto_lupa");
 var mensagem1 =  document.querySelector (".mensagem1");
 var mensagem2 = document.querySelector (".mensagem2");
 var aparenciaInicial = document.querySelector (".texto-sobrepor");
 
 function remover (){
 
-    meninoDaLupa.classList.remove("resposta");
-    meninoDaLupa.classList.add("resposta2");
+    meninoDaLupa.classList.remove("garoto_lupa");
+    meninoDaLupa.classList.add("garoto_lupa2");
     mensagem1.classList.remove("mensagem1");
     mensagem1.classList.add("notmensage");
     mensagem2.classList.remove("mensagem2");

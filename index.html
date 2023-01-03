@@ -11,35 +11,42 @@
 
 <body>
     <header>
-        <img src="img/vetor.png" class="vetor">
-    </header>
-    <main>
-        <section>
-            <label for="mensagem-usuario"></label>
-            <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto" required></textarea>
-        </section>
-        <section>
-            <textarea type="text" cols="40" rows="10" class="texto-criptografado" disabled></textarea>
-            <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
-        </section>
-        <section>
-            <textarea type="text" cols="40" rows="10" class="texto-sobrepor" disabled></textarea> 
-            <img src="img/garoto_lupa.svg" class="resposta">
-            <p class="mensagem1"> Nenhuma mensagem encontrada</p>
-            <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-            <!--placeholder="Nenhuma mensagem encontrada"-->
-        </section>
-        <div id="botoes">
-            <p id="alerta"> <img src="img/esclamacao.png">Apenas letras minúsculas e sem acento.</p>
-            <button onclick="criptografar()" class="criptografar">Criptografar</button>
-            <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
-        </div>
-    </main>
-    <footer>
+        <img src="img/logo-alura.png" class="logo-alura" alt="Logo da Alura">
+        <div class="minhas-redes">
+            <a href="https://github.com/RamonRodSou"><img src="img/icon_github.png" class="github" alt="Logo e Link do Github"></a> 
+            <a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="img/icon_linkedin.png" class="linkdin" alt="Logo e Link do Linkdin"></a>
+            <a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img src="img/icon_whatsapp.png" class="whatsapp" alt="Logo e Link do Whatsapp"></a>
 
+        </div>
+    </header>
+    <section>
+        <label for="mensagem-usuario"></label>
+        <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"  required></textarea>
+    </section>
+    <section>
+        <textarea type="text" cols="40" rows="10" class="texto-criptografado" disabled></textarea>
+        <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
+    </section>
+    <section>
+        <textarea type="text" cols="40" rows="10" class="texto-sobrepor" disabled></textarea>
+        <img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa">
+        <p class="mensagem1"> Nenhuma mensagem encontrada</p>
+        <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <!--placeholder="Nenhuma mensagem encontrada"-->
+    </section>
+    <div id="botoes">
+        <p id="alerta"> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem acento.
+        </p>
+        <button onclick="criptografar()" class="criptografar">Criptografar</button>
+        <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Ramon RodSou Challenge Encriptador - 12/2022</p>
     </footer>
+    <script src="criptografar.js"> </script>
+
 </body>
 
-<script src="criptografar.js"> </script>
 
 </html>
