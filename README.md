@@ -1,4 +1,4 @@
-# 👩🏽‍💻 Challenge ONE ORACLE
+💻 Challenge ONE ORACLE
 
 ## 🌐 Link do projeto
 
