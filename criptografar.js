@@ -75,8 +75,7 @@ function criptografar() {
             /* Copia o texto que está selecionado */
             document.execCommand("copy");
 
-            alert("Texto copiado: " + mensagemCriptografada.value);
-        
+            /*alert("Texto copiado: " + mensagemCriptografada.value);*/
     
     }
     

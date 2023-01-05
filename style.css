@@ -2,38 +2,35 @@ body {
 
     background: #E5E5E5;
     margin: 0 auto;
-    width: 1300px;
+    width: 100%;
 }
 
 .logo-alura {
     position: fixed;
-    margin: 2% 2% ;
-    width: 3%;
-    height: 8%;
-
+    margin: 2% 5%;
+    padding: 0 2%;
 }
 
 /* Local das minhas redes sóciais para contato */
 
 .minhas-redes {
 
-    position: fixed ;
+    position: fixed;
     background: #5488c32a;
-    width:65px ;
-    height:70%;
+    width: 65px;
+    height: 70%;
     left: 0;
     top: 15%;
     transform: 100ms;
     border-radius: 30px;
     transition: 1s background;
-
 }
 
-.github{
+.github {
 
     position: absolute;
     width: 40px;
-    top:35%;
+    top: 35%;
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
@@ -42,25 +39,24 @@ body {
     opacity: 0.3;
 }
 
-.linkdin{
+.linkdin {
 
     position: absolute;
     width: 40px;
-    top:45%;
+    top: 45%;
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
     transition: 1s background;
     cursor: pointer;
     opacity: 0.3;
-
 }
 
-.whatsapp{
+.whatsapp {
 
     position: absolute;
     width: 40px;
-    top:55%;
+    top: 55%;
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
@@ -78,17 +74,22 @@ body {
 
 }
 
-.github:hover,.linkdin:hover,.whatsapp:hover {
+.github:hover,
+.linkdin:hover,
+.whatsapp:hover {
 
     background: #cedcea;
     opacity: 1;
 
 }
 
-.github:active,.linkdin:active,.whatsapp:active {
+.github:active,
+.linkdin:active,
+.whatsapp:active {
 
     background: #0ae469;
 }
+
 /* Local onde o usúario digita seu texto */
 
 #mensagem-usuario {
@@ -103,7 +104,7 @@ body {
     font-size: 2em;
     margin: 3% 8%;
     resize: none;
-    overflow:auto;
+    overflow: auto;
     text-transform: lowercase;
     width: 44%;
     height: 40%;
@@ -125,7 +126,7 @@ body {
     position: fixed;
     top: 30px;
     end: 2%;
-   /* 
+    /* 
     width: 350px;
     height: 600px;*/
 
@@ -133,13 +134,12 @@ body {
     height: 75%;
 
     background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     margin: 0 4% 4% 0;
     left: 72%;
     padding: 40px 20px;
     resize: none;
-    overflow:auto;
+    overflow: auto;
     text-align: center;
     text-transform: lowercase;
     font-family: 'Inter';
@@ -147,7 +147,7 @@ body {
     font-weight: 300px;
     font-size: 2em;
     color: #0A3871;
-    transition: 1s background ;
+    transition: 1s background;
 
 }
 
@@ -217,7 +217,6 @@ body {
     left: 20%;
     bottom: 12%;
     margin: 0 2% 0 2%;
-
 }
 
 .criptografar {
@@ -231,12 +230,11 @@ body {
     font-size: 22px;
     color: #ffffff;
     cursor: pointer;
-    transition: 300ms background ;
-
+    transition: 300ms background;
 }
 
 .decriptografar {
-   
+
     width: 30%;
     height: 70%;
     margin-left: 20px;
@@ -261,11 +259,10 @@ body {
     color: #0A3871;
     left: 72%;
     bottom: 10%;
-    transition: 300ms background ; 
+    transition: 300ms background;
     margin: auto 1% 1% 1%;
     cursor: pointer;
-
-} 
+}
 
 .criptografar:hover {
 
@@ -304,8 +301,9 @@ e os paragrafos para local da mensagem criptografada*/
 .garoto_lupa2 {
 
     display: none;
-    
+
 }
+
 .notmensage {
 
     display: none;
@@ -319,27 +317,23 @@ e os paragrafos para local da mensagem criptografada*/
 .texto-sobrepor-none {
 
     display: none;
-
 }
 
-
 footer {
-    position: fixed ;
+    position: fixed;
     background: #E5E5E5;
-    display: block;    
+    display: block;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 0;
     text-align: center;
-	padding: 25px 0;
+    padding: 25px 0;
     margin: 0 auto;
-
 }
 
 .copyright {
 
     color: #000000a2;
-	font-size: 13px;
+    font-size: 13px;
 }
- 
