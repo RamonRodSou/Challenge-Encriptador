@@ -18,9 +18,9 @@ body {
     position: fixed;
     background: #5488c32a;
     width: 65px;
-    height: 70%;
+    height: 400px;
     left: 0;
-    top: 15%;
+    top: 150px;
     transform: 100ms;
     border-radius: 30px;
     transition: 1s background;
@@ -107,10 +107,9 @@ body {
     overflow: auto;
     text-transform: lowercase;
     width: 44%;
-    height: 40%;
+    height: 250px;
     left: 10%;
-    top: 15%;
-
+    top: 100px;
 }
 
 #mensagem-usuario::placeholder {
@@ -119,24 +118,31 @@ body {
 }
 
 /* Local onde aparece a mensagem criptografada */
+.conteine-resposta {
+
+    width: 940px;
+    margin: 0 auto;
+}
 
 .texto-criptografado,
 .texto-sobrepor {
 
-    position: fixed;
+    position: absolute;
+    text-align: right;
+
     top: 30px;
-    end: 2%;
+    right: 15px;
+
     /* 
     width: 350px;
     height: 600px;*/
 
-    width: 20%;
-    height: 75%;
+    width: 300px;
+    height: 550px;
 
     background: #FFFFFF;
     border-radius: 32px;
     margin: 0 4% 4% 0;
-    left: 72%;
     padding: 40px 20px;
     resize: none;
     overflow: auto;
@@ -148,6 +154,7 @@ body {
     font-size: 2em;
     color: #0A3871;
     transition: 1s background;
+    
 
 }
 
@@ -156,39 +163,38 @@ body {
 .garoto_lupa {
 
     position: fixed;
-    top: 15%;
+    top: 110px;
     margin: 0 4% 4% 0;
-    left: 72%;
-    width: 23%;
+    right: 15px;
+    width: 320px;
 }
 
 .mensagem1 {
 
     color: #0A3871;
     position: fixed;
-    top: 55%;
+    top: 400px;
+    right: 15px;
     font-family: 'Inter';
     font-size: 2em;
     font-weight: bold;
-    margin: 0 4% 4% 0;
-    padding: 4% 2%;
-    left: 70%;
+    margin: 20px 60px;
     text-align: center;
     width: 23%;
+
 }
 
 .mensagem2 {
 
     color: #495057;
     position: fixed;
-    top: 69%;
+    top: 500px;
     font-family: 'Inter';
     font-style: normal;
     font-size: 1em;
     font-weight: 400;
-    margin: 0 4% 4% 0;
-    padding: 4% 2%;
-    left: 72.5%;
+    margin: 20px 80px;
+    right: 25px;
     text-align: center;
     width: 18%;
 }
@@ -221,8 +227,8 @@ body {
 
 .criptografar {
 
-    width: 30%;
-    height: 70%;
+    width: 270px;
+    height: 67px;
     background: #0A3871;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
@@ -235,8 +241,8 @@ body {
 
 .decriptografar {
 
-    width: 30%;
-    height: 70%;
+    width: 270px;
+    height: 67px;
     margin-left: 20px;
     background: #D8DFE8;
     border-radius: 24px;
@@ -250,17 +256,17 @@ body {
 .copiarMensagem {
 
     position: fixed;
-    width: 20.5%;
+    width: 270px;
     height: 67px;
     background: #FFFFFF;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
     font-size: 22px;
     color: #0A3871;
-    left: 72%;
-    bottom: 10%;
+    right: 10px;
+    top: 580px;
     transition: 300ms background;
-    margin: auto 1% 1% 1%;
+    margin: 0 auto;
     cursor: pointer;
 }
 
