@@ -373,6 +373,7 @@ footer {
     #mensagem-usuario {
 
        text-align: center;
+       position: absolute;
     }
     
 
@@ -406,7 +407,6 @@ footer {
 
     }
 
-
     .logo-alura {
 
         position: absolute;
@@ -429,10 +429,6 @@ footer {
         position: absolute;
     }
 
-    .div-criptografado {
-
-    }
-    
     .texto-criptografado {
     
         position: absolute;
@@ -452,18 +448,18 @@ footer {
     .div-criptografado {
 
         position: absolute;
+        top:65%;
         width: 100%;
-        height: 81.4%;
+        height: 145px;
     }
     
     .texto-criptografado {
     
         position: absolute;
-        top: 100%;
+        top: 95%;
     
         width: 77%;
         height: 150px;
-
         box-sizing: border-box;
     }
     
@@ -475,52 +471,53 @@ footer {
     .texto-sobrepor {
 
         position: absolute;
-        top: 95%;
+        top: 90%;
     
-        width: 82%;
-        height: 150px;
-
+        width:100%;
+        height: 145px;  
         margin: 0 8%;
-        display: none;
+
+        background: none;
+        border: none;
+        margin: 0;
+        right:0;
+        left: 0;
+    
+        transition: 1s background;
 
     }
     
     .lista-mensagem-criptoragafa {
 
         position: absolute;
+        display: inline-block;
         top:0;
-        width: 100%;
-        height: 130px;  
+        margin:20px;
+        width: 90%;
+        height: 50px;  
     }
 
 
     .mensagem1 {
 
-  
-        position: absolute;
+        position: relative;
         display: inline-block;
         width: 80%;
         color: #0A3871;
+        margin:20px;
         top:0;
         left: 0;
     }
     
     .mensagem2 {
-    
-        color: #495057;
-        position: absolute;
-        display: inline-block;
-        top: 60%;
-        left: 0;
-        width: 100%;
+
+        display: none;
     }
-
-
 
     #botoes {
 
         width: 50%;
-        top: 70%;
+        top: 65%;
         text-align: center;
         display: inline-block;
         width: 100%;
@@ -528,7 +525,9 @@ footer {
 
     #alerta {
         
-        display: none;
+        display: inline-block;
+        width: 50%;
+        left: 0;
     }
 
     .criptografar {
