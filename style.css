@@ -345,7 +345,8 @@ e os paragrafos para local da mensagem criptografada*/
 }
 
 footer {
-    position: fixed;
+
+    position: absolute;
     background: #E5E5E5;
     display: block;
     left: 0;
@@ -354,7 +355,6 @@ footer {
     height: 0;
     text-align: center;
     padding: 25px 0;
-    margin: 0 auto;
 }
 
 .copyright {
@@ -365,7 +365,10 @@ footer {
 
 @media screen and (max-width: 1400px){
 
-    
+    .minhas-redes {
+        position: absolute;
+    }
+
     .github {
 
         top: 20%;
@@ -377,47 +380,49 @@ footer {
     }
 
     .whatsapp {
-
+        
         top: 60%;
     }
 
 
     #mensagem-usuario {
+        position: absolute;
 
         width: 35%;
-        height: 30%;
+        height: 40%;
     }
     
     .texto-sobrepor {
 
+        
         width: 320px;
-        height: 500px;
+        height: 600px;
     }
 
     .garoto_lupa {
 
-        top: 90px;
+        top: 140px;
         width: 250px;
     }
     
     .mensagem1 {
     
-        top: 360px;
+        top: 440px;
     }
     
     .mensagem2 {
 
-        top: 450px;
+        top: 530px;
     }
     
-    .texto-criptografado, .div-criptografada  {
+    .texto-criptografado, .div-criptografado  {
     
-        height: 420px;
+        height: 520px;
     }
 
     .copiarMensagem {
 
-        top:380px;
+        top:480px;
     }
     
     .minhas-redes {
@@ -427,40 +432,57 @@ footer {
 
     #botoes {
 
-        width: 100%;
-        top:75%;
-        text-align: center;
+        display: block;
+        width: 85%;
+        top:80%;
    }
 
+   #alerta {
+
+        left: 20;
+   }
     
     .criptografar {
-        left: 0;
 
+       top:40%;
     }
     
     .decriptografar {
-        left: 0;
 
     }
-
+    
     footer {
         position: absolute;
         background: #E5E5E5;
         display: inline-block;
-        width: 100%;
-        top:120%;
+        width: 120%;
+        top:100%;
     }
 
 }
 
 @media screen and (max-width: 973px){
 
+    .logo-alura {
+
+        position: absolute;
+
+    }
+    .garoto_lupa {
+
+        position: absolute;
+        top: 0;
+        width: 22%;
+        margin: 0;
+        display: inline-block;
+        right: 0;
+    }
+
     #mensagem-usuario {
 
         width: 70%;
         height: 250px;
         margin: 3% 5%;
-
     }
     
     #mensagem-usuario {
@@ -471,23 +493,24 @@ footer {
     .div-criptografado {
 
         position: absolute;
-        width: 85%;        
-        top: 91.5%;
-        display: inline-block;
-
+        width: 100%;
+        height: 81.4%;
     }
     
     .texto-criptografado {
     
         position: absolute;
+        top: 100%;
+    
+        width: 77%;
+        height: 150px;
 
-        width: 82%;
-        height: 60px;
-
+        box-sizing: border-box;
     }
+    
     .copiarMensagem {
 
-        display: none;
+        display: none;        
     }
     
     .texto-sobrepor {
@@ -495,11 +518,10 @@ footer {
         position: absolute;
         top: 95%;
     
-        width: 80%;
+        width: 82%;
         height: 150px;
 
-        display: inline-block;
-        margin: 0 10%;
+        margin: 0 8%;
     }
     
     .lista-mensagem-criptoragafa {
@@ -507,22 +529,9 @@ footer {
         position: absolute;
         top:0;
         width: 100%;
-        height: 130px;
-        right: none;
-
-    
+        height: 130px;  
     }
 
-    .garoto_lupa {
-
-        position: absolute;
-        top: 0;
-        width: 22%;
-        margin: 0;
-        display: inline-block;
-        right: 0;
-
-    }
 
     .mensagem1 {
 
@@ -547,7 +556,8 @@ footer {
     }
 
     #alerta {
-        display: none;
+        left: 15%;
+        right: 15%;
     }
 
     #botoes {
@@ -557,6 +567,23 @@ footer {
         top: 80%;
     }
 
+    .criptografar {
+
+        left:0;
+    }
+
+    .decriptografar {
+
+        left:0;
+    }
+    
+    footer {
+        position: absolute;
+        background: #E5E5E5;
+        display: inline-block;
+        width: 100%;
+        top:120%;
+    }
 
 }
 
@@ -584,6 +611,7 @@ footer {
     .garoto_lupa {
 
         display: none;
+    
     }
 
     .lista-mensagem-criptoragafa {
@@ -602,6 +630,7 @@ footer {
     }
     
 }
+
 @media screen and (max-width: 600px){
 
     .logo-alura {
@@ -645,6 +674,10 @@ footer {
 
     }
 
+    .texto-criptografado {
+    
+        width: 75%;
+    }
 }
 
 @media screen and (max-width:  464px){
@@ -652,8 +685,8 @@ footer {
     #botoes {
 
         position: absolute;
-        display: grid;
-        top: 70%;
+        display: inline-block;
+        top: 67%;
         width: 100%;
     }
 
@@ -662,7 +695,6 @@ footer {
         left: none;
         margin: 0 25%;
         width: 49%;
-
     }
 
     .decriptografar {
@@ -675,6 +707,11 @@ footer {
     .mensagem1 {
 
         font-size: 1.5rem;
+    }
+
+    .texto-criptografado {
+    
+        width: 73%;
     }
 
 }
@@ -700,4 +737,10 @@ footer {
 
         display: none;
     }
+
+    .texto-criptografado {
+    
+        width: 70%;
+    }
 }
+
