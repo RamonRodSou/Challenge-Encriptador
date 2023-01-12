@@ -18,7 +18,7 @@ body {
     position: fixed;
     background: #5488c32a;
     width: 65px;
-    height: 70%;
+    height: 400px;
     left: 0;
     top: 15%;
     transform: 100ms;
@@ -30,7 +30,7 @@ body {
 
     position: absolute;
     width: 40px;
-    top: 35%;
+    top: 100px;
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
@@ -43,7 +43,7 @@ body {
 
     position: absolute;
     width: 40px;
-    top: 45%;
+    top: 170px;
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
@@ -56,7 +56,7 @@ body {
 
     position: absolute;
     width: 40px;
-    top: 55%;
+    top: 240px;
     margin: 10px;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
@@ -363,6 +363,196 @@ footer {
     font-size: 12px;
 }
 
+@media screen and (max-width: 600px){
+
+    .logo-alura {
+
+        position: absolute;
+    }
+
+    #mensagem-usuario {
+
+       text-align: center;
+    }
+    
+
+    .minhas-redes {
+
+        position: absolute;
+        display: flex;
+        width: 200px;
+        height: 65px;
+        top: 0;
+        margin: 0 30% 0 30%;
+    }
+
+
+    .github {
+
+        position: relative;
+        top: 0;
+        margin: 10px 10px 10px 20px;
+    }
+
+    .linkdin {
+
+        position: relative;
+        top: 0;
+    }
+
+    .whatsapp {
+        position: relative;
+        top: 0;
+
+    }
+
+
+    .logo-alura {
+
+        position: absolute;
+
+    }
+    .garoto_lupa {
+
+        display: none;
+    }
+
+    #mensagem-usuario {
+
+        width: 70%;
+        height: 250px;
+        margin: 3% 5%;
+    }
+    
+    #mensagem-usuario {
+    
+        position: absolute;
+    }
+
+    .div-criptografado {
+
+    }
+    
+    .texto-criptografado {
+    
+        position: absolute;
+        top: 100%;
+    
+        width: 77%;
+        height: 150px;
+
+        box-sizing: border-box;
+    }
+    
+    .copiarMensagem {
+
+        display: none;        
+    }
+    
+    .div-criptografado {
+
+        position: absolute;
+        width: 100%;
+        height: 81.4%;
+    }
+    
+    .texto-criptografado {
+    
+        position: absolute;
+        top: 100%;
+    
+        width: 77%;
+        height: 150px;
+
+        box-sizing: border-box;
+    }
+    
+    .copiarMensagem {
+
+        display: none;        
+    }
+    
+    .texto-sobrepor {
+
+        position: absolute;
+        top: 95%;
+    
+        width: 82%;
+        height: 150px;
+
+        margin: 0 8%;
+        display: none;
+
+    }
+    
+    .lista-mensagem-criptoragafa {
+
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 130px;  
+    }
+
+
+    .mensagem1 {
+
+  
+        position: absolute;
+        display: inline-block;
+        width: 80%;
+        color: #0A3871;
+        top:0;
+        left: 0;
+    }
+    
+    .mensagem2 {
+    
+        color: #495057;
+        position: absolute;
+        display: inline-block;
+        top: 60%;
+        left: 0;
+        width: 100%;
+    }
+
+
+
+    #botoes {
+
+        width: 50%;
+        top: 70%;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #alerta {
+        
+        display: none;
+    }
+
+    .criptografar {
+        
+        left: 0;
+    }
+
+    .decriptografar {
+    
+        margin: 10px 0;
+        left: 0;
+    }
+    
+    footer {
+        position: absolute;
+        background: #E5E5E5;
+        display: inline-block;
+        width: 100%;
+        top:120%;
+    }
+
+}
+
+/*
 @media screen and (max-width: 1400px){
 
     .minhas-redes {
@@ -631,55 +821,6 @@ footer {
     
 }
 
-@media screen and (max-width: 600px){
-
-    .logo-alura {
-
-        position: absolute;
-    }
-
-    #mensagem-usuario {
-
-       text-align: center;
-    }
-    
-
-    .minhas-redes {
-
-        position: absolute;
-        display: flex;
-        width: 200px;
-        height: 65px;
-        top: 0;
-        margin: 0 30% 0 30%;
-    }
-
-
-    .github {
-
-        position: relative;
-        top: 0;
-        margin: 10px 10px 10px 20px;
-    }
-
-    .linkdin {
-
-        position: relative;
-        top: 0;
-    }
-
-    .whatsapp {
-        position: relative;
-        top: 0;
-
-    }
-
-    .texto-criptografado {
-    
-        width: 75%;
-    }
-}
-
 @media screen and (max-width:  464px){
 
     #botoes {
@@ -743,4 +884,4 @@ footer {
         width: 70%;
     }
 }
-
+*/
