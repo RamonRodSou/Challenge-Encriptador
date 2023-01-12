@@ -1,22 +1,15 @@
 var mensagemUsuario = document.querySelector("#mensagem-usuario");
-var mensagemCriptografada = document.querySelector(".texto-criptografado");
-var meninoDaLupa = document.querySelector(".garoto_lupa");
-var mensagem1 =  document.querySelector (".mensagem1");
-var mensagem2 = document.querySelector (".mensagem2");
+var mensagemCriptografada = document.querySelector(".texto-criptografado");  
+
 var aparenciaInicial = document.querySelector (".texto-sobrepor");
 
-function remover (){
 
-    meninoDaLupa.classList.remove("garoto_lupa");
-    meninoDaLupa.classList.add("garoto_lupa2");
-    mensagem1.classList.remove("mensagem1");
-    mensagem1.classList.add("notmensage");
-    mensagem2.classList.remove("mensagem2");
-    mensagem2.classList.add("notmensage2");
-    aparenciaInicial.classList.remove("texto-sobrepor");
-    aparenciaInicial.classList.add("texto-sobrepor-none");
+var elementos = document.getElementsByClassName("texto-criptografado");
+elementos.forEach(alteraDisplay);
+
+function alteraDisplay(item, index) {
+    item.style.display = "block";
 }
-
 
 function criptografar() {
 
@@ -37,7 +30,8 @@ function criptografar() {
     /*    Podemos esrever o replace " Substituir " também desta forma.
     .replaceAll("e","enter")
     */
-    remover ();
+
+    aparenciaInicial.classList.add("texto-sobrepor-none"); 
     mensagemCriptografada.value = criptografado;
 
 }

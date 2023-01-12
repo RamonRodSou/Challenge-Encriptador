@@ -18,9 +18,9 @@ body {
     position: fixed;
     background: #5488c32a;
     width: 65px;
-    height: 400px;
+    height: 70%;
     left: 0;
-    top: 150px;
+    top: 15%;
     transform: 100ms;
     border-radius: 30px;
     transition: 1s background;
@@ -107,9 +107,10 @@ body {
     overflow: auto;
     text-transform: lowercase;
     width: 44%;
-    height: 250px;
+    height: 40%;
     left: 10%;
-    top: 100px;
+    top: 15%;
+
 }
 
 #mensagem-usuario::placeholder {
@@ -118,31 +119,32 @@ body {
 }
 
 /* Local onde aparece a mensagem criptografada */
-.conteine-resposta {
 
-    width: 940px;
-    margin: 0 auto;
-}
+.div-criptografado{
 
-.texto-criptografado,
-.texto-sobrepor {
-
-    position: absolute;
-    text-align: right;
+    position: fixed;
 
     top: 30px;
-    right: 15px;
+    width: 280px;
+    height: 550px;
 
-    /* 
-    width: 350px;
-    height: 600px;*/
+    right:0;
+    margin: 0 4% 4% 0;
+    padding: 40px 20px;
+}
 
-    width: 300px;
+.texto-criptografado  {
+
+    position: fixed;
+    top: 30px;
+
+    width: 280px;
     height: 550px;
 
     background: #FFFFFF;
     border-radius: 32px;
     margin: 0 4% 4% 0;
+    right:0;
     padding: 40px 20px;
     resize: none;
     overflow: auto;
@@ -153,34 +155,57 @@ body {
     font-weight: 300px;
     font-size: 2em;
     color: #0A3871;
+    transition: 1s background; 
+}
+
+.texto-sobrepor {
+
+    position: fixed;
+    top: 30px;
+
+    width: 320px;
+    height: 630px;
+
+    background: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 32px;
+    margin: 0 4% 4% 0;
+    right:0;
+
     transition: 1s background;
+    text-align: center;
+}
+
+.lista-mensagem-criptoragafa {
     
+    top: 30px;
+    right: 0;
+    margin: 0 4% 4% 0;
+    width: 320px;
 
 }
 
-/* Img e Paragrafos lado direito, local resposta */
 
 .garoto_lupa {
 
-    position: fixed;
-    top: 110px;
-    margin: 0 4% 4% 0;
-    right: 15px;
-    width: 320px;
+    position: relative;
+    top: 150px;
+    width: 280px;
+    margin: 0 auto;
+
+
 }
 
 .mensagem1 {
 
     color: #0A3871;
     position: fixed;
-    top: 400px;
-    right: 15px;
+    top: 430px;
     font-family: 'Inter';
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
-    margin: 20px 60px;
-    text-align: center;
-    width: 23%;
+    padding: 20px 0;
+    width: 320px;
 
 }
 
@@ -188,15 +213,14 @@ body {
 
     color: #495057;
     position: fixed;
-    top: 500px;
+    top: 530px;
     font-family: 'Inter';
     font-style: normal;
     font-size: 1em;
     font-weight: 400;
-    margin: 20px 80px;
-    right: 25px;
-    text-align: center;
-    width: 18%;
+    padding: 20px 0;
+    width: 320px;
+
 }
 
 /* Local destinado aos botões*/
@@ -204,31 +228,28 @@ body {
 
 #botoes {
 
-    width: 60%;
-    height: 13%;
-    position: fixed;
-    margin: 0 auto;
-    bottom: 15%;
-    text-align: center;
-    left: 10%;
-    bottom: 9%;
+    position: absolute;
+
+    width: 50%;
+    top:560px;
 }
 
 #alerta {
-    position: fixed;
-    width: 60%;
-    height: 13%;
-    margin: 0 auto;
-    bottom: 15%;
-    left: 20%;
-    bottom: 12%;
-    margin: 0 2% 0 2%;
+    position: relative;
+    display: flex;
+
+    left: 300px;
+    margin: 0 10px 0 10px;
 }
 
 .criptografar {
 
-    width: 270px;
+    position: relative;
+    display: inline-block;
+    width: 280px;
     height: 67px;
+
+    left: 300px;
     background: #0A3871;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
@@ -241,9 +262,16 @@ body {
 
 .decriptografar {
 
-    width: 270px;
+    position: relative;
+    display: inline-block;
+
+    width: 280px;
     height: 67px;
+
+    left: 380px;
+
     margin-left: 20px;
+
     background: #D8DFE8;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
@@ -254,25 +282,26 @@ body {
 }
 
 .copiarMensagem {
+    position: relative;
 
-    position: fixed;
-    width: 270px;
+    width: 280px;
     height: 67px;
+
+    top:510px;
+
     background: #FFFFFF;
     border-radius: 24px;
     border: 1px solid #a7c3f0;
     font-size: 22px;
     color: #0A3871;
-    right: 10px;
-    top: 580px;
     transition: 300ms background;
-    margin: 0 auto;
     cursor: pointer;
 }
 
 .criptografar:hover {
 
     background: #0a3871d6;
+
 }
 
 .decriptografar:hover {
@@ -290,6 +319,12 @@ body {
     background: #548ce7;
 }
 
+.criptografar.active .texto-criptografado{
+
+    display: block;
+
+}
+
 .decriptografar:active {
 
     background: #548ce7;
@@ -303,22 +338,6 @@ body {
 
 /* Local onde é substituido a parte inicial, do qual aparece o garoto da lupa 
 e os paragrafos para local da mensagem criptografada*/
-
-.garoto_lupa2 {
-
-    display: none;
-
-}
-
-.notmensage {
-
-    display: none;
-}
-
-.notmensage2 {
-
-    display: none;
-}
 
 .texto-sobrepor-none {
 
@@ -342,4 +361,343 @@ footer {
 
     color: #000000a2;
     font-size: 13px;
+}
+
+@media screen and (max-width: 1400px){
+
+    
+    .github {
+
+        top: 20%;
+    }
+
+    .linkdin {
+
+        top: 40%;
+    }
+
+    .whatsapp {
+
+        top: 60%;
+    }
+
+
+    #mensagem-usuario {
+
+        width: 35%;
+        height: 30%;
+    }
+    
+    .texto-sobrepor {
+
+        width: 320px;
+        height: 500px;
+    }
+
+    .garoto_lupa {
+
+        top: 90px;
+        width: 250px;
+    }
+    
+    .mensagem1 {
+    
+        top: 360px;
+    }
+    
+    .mensagem2 {
+
+        top: 450px;
+    }
+    
+    .texto-criptografado, .div-criptografada  {
+    
+        height: 420px;
+    }
+
+    .copiarMensagem {
+
+        top:380px;
+    }
+    
+    .minhas-redes {
+
+        height: 50%;
+    }
+
+    #botoes {
+
+        width: 100%;
+        top:75%;
+        text-align: center;
+   }
+
+    
+    .criptografar {
+        left: 0;
+
+    }
+    
+    .decriptografar {
+        left: 0;
+
+    }
+
+    footer {
+        position: absolute;
+        background: #E5E5E5;
+        display: inline-block;
+        width: 100%;
+        top:120%;
+    }
+
+}
+
+@media screen and (max-width: 973px){
+
+    #mensagem-usuario {
+
+        width: 70%;
+        height: 250px;
+        margin: 3% 5%;
+
+    }
+    
+    #mensagem-usuario {
+    
+        position: absolute;
+    }
+
+    .div-criptografado {
+
+        position: absolute;
+        width: 85%;        
+        top: 91.5%;
+        display: inline-block;
+
+    }
+    
+    .texto-criptografado {
+    
+        position: absolute;
+
+        width: 82%;
+        height: 60px;
+
+    }
+    .copiarMensagem {
+
+        display: none;
+    }
+    
+    .texto-sobrepor {
+
+        position: absolute;
+        top: 95%;
+    
+        width: 80%;
+        height: 150px;
+
+        display: inline-block;
+        margin: 0 10%;
+    }
+    
+    .lista-mensagem-criptoragafa {
+
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 130px;
+        right: none;
+
+    
+    }
+
+    .garoto_lupa {
+
+        position: absolute;
+        top: 0;
+        width: 22%;
+        margin: 0;
+        display: inline-block;
+        right: 0;
+
+    }
+
+    .mensagem1 {
+
+  
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        color: #0A3871;
+        top:0;
+        left: 0;
+    }
+    
+    .mensagem2 {
+    
+        color: #495057;
+        position: absolute;
+        display: inline-block;
+        top: 60%;
+        left: 0;
+        width: 100%;
+    
+    }
+
+    #alerta {
+        display: none;
+    }
+
+    #botoes {
+
+        width: 100%;
+        text-align: center;
+        top: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 720px){
+
+    .minhas-redes {
+
+        height: 50%;
+    }
+    .github {
+
+        top: 20%;
+    }
+
+    .linkdin {
+
+        top: 40%;
+    }
+
+    .whatsapp {
+
+        top: 60%;
+    }
+
+    .garoto_lupa {
+
+        display: none;
+    }
+
+    .lista-mensagem-criptoragafa {
+
+        right: 0;
+        left: 0;
+    }
+    
+    .criptografar {
+        width: 220px;
+    }
+    
+    .decriptografar {
+        width: 220px;
+
+    }
+    
+}
+@media screen and (max-width: 600px){
+
+    .logo-alura {
+
+        position: absolute;
+    }
+
+    #mensagem-usuario {
+
+       text-align: center;
+    }
+    
+
+    .minhas-redes {
+
+        position: absolute;
+        display: flex;
+        width: 200px;
+        height: 65px;
+        top: 0;
+        margin: 0 30% 0 30%;
+    }
+
+
+    .github {
+
+        position: relative;
+        top: 0;
+        margin: 10px 10px 10px 20px;
+    }
+
+    .linkdin {
+
+        position: relative;
+        top: 0;
+    }
+
+    .whatsapp {
+        position: relative;
+        top: 0;
+
+    }
+
+}
+
+@media screen and (max-width:  464px){
+
+    #botoes {
+
+        position: absolute;
+        display: grid;
+        top: 70%;
+        width: 100%;
+    }
+
+    .criptografar {
+
+        left: none;
+        margin: 0 25%;
+        width: 49%;
+
+    }
+
+    .decriptografar {
+
+        left: none;
+        margin: 0 25%;
+        width: 49%;
+    }
+
+    .mensagem1 {
+
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:  290px){
+
+    .minhas-redes {
+
+        display: none;
+    }
+
+    .criptografar {
+
+        width: 150px;
+    }
+
+    .decriptografar {
+
+        width: 150px;
+    }
+
+    .mensagem2 {
+
+        display: none;
+    }
 }

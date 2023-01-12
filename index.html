@@ -2,50 +2,46 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width">
+        <meta name="viewport" content="width=device-width">
 
         <title>Decodificador</title>
-
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <header>
-            <div class="logo-contato">
-                <img src="img/logo-alura.png" class="logo-alura" alt="Logo da Alura">
-                <ul class="minhas-redes">
-                    <li><a href="https://github.com/RamonRodSou"><img src="img/icon_github.png" class="github"
-                            alt="Logo e Link do Github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="img/icon_linkedin.png" class="linkdin"
-                            alt="Logo e Link do Linkdin"></a></li>
-                    <li><a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img
-                            src="img/icon_whatsapp.png" class="whatsapp" alt="Logo e Link do Whatsapp"></a></li>
-                </ul>
-            </div>
+            <img src="img/logo-alura.png" class="logo-alura" alt="Logo da Alura">
+            <ul class="minhas-redes">
+                <li><a href="https://github.com/RamonRodSou"><img src="img/icon_github.png" class="github"
+                        alt="Logo e Link do Github"></a></li>
+                <li><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="img/icon_linkedin.png" class="linkdin"
+                        alt="Logo e Link do Linkdin"></a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img
+                        src="img/icon_whatsapp.png" class="whatsapp" alt="Logo e Link do Whatsapp"></a></li>
+            </ul>
         </header>
-        <section  class="usuario">
+        <section>
             <div>
                 <label for="mensagem-usuario"></label>
                 <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"
                     required></textarea>
             </div>
-            <div class="conteine-resposta">
+            <div class="div-criptografado">
                 <textarea type="text" cols="40" rows="10" class="texto-criptografado" readonly></textarea>
                 <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
+
             </div>
-            <div class="conteine-resposta">
-                <textarea type="text" cols="40" rows="10" class="texto-sobrepor" disabled></textarea>
-                <img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa">
-                <p class="mensagem1"> Nenhuma mensagem encontrada</p>
-                <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <div class="texto-sobrepor" >
+                <ul class="lista-mensagem-criptoragafa">
+                    <li><img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa"></li>
+                    <li><p class="mensagem1"> Nenhuma mensagem encontrada</p></li>
+                    <li><p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p></li>
+                 </ul>                
             </div>
-            <div>    
+            <div id="botoes">  
                 <p id="alerta"> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem
-                acento.
-            <div id="botoes">
-                </p>
+                acento.</p>
                 <button onclick="criptografar()" class="criptografar">Criptografar</button>
                 <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
             </div>
