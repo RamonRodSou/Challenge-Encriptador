@@ -4,13 +4,6 @@ var mensagemCriptografada = document.querySelector(".texto-criptografado");
 var aparenciaInicial = document.querySelector (".texto-sobrepor");
 
 
-var elementos = document.getElementsByClassName("texto-criptografado");
-elementos.forEach(alteraDisplay);
-
-function alteraDisplay(item, index) {
-    item.style.display = "block";
-}
-
 function criptografar() {
 
     var mensagem = mensagemUsuario.value;

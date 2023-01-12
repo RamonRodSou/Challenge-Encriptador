@@ -456,7 +456,7 @@ footer {
     .texto-criptografado {
     
         position: absolute;
-        top: 95%;
+        top: 350px;
     
         width: 77%;
         height: 150px;
@@ -471,7 +471,7 @@ footer {
     .texto-sobrepor {
 
         position: absolute;
-        top: 90%;
+        top: 750px;
     
         width:100%;
         height: 145px;  
@@ -512,7 +512,7 @@ footer {
     #botoes {
 
         width: 50%;
-        top: 65%;
+        top: 550px;
         text-align: center;
         display: inline-block;
         width: 100%;
@@ -541,7 +541,7 @@ footer {
         background: #E5E5E5;
         display: inline-block;
         width: 100%;
-        top:120%;
+        top:1000px;
     }
 
 }
