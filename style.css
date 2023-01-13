@@ -192,8 +192,6 @@ body {
     top: 150px;
     width: 280px;
     margin: 0 auto;
-
-
 }
 
 .mensagem-cel {
@@ -370,26 +368,37 @@ footer {
 
 @media screen and (max-width: 600px){
 
+
     .logo-alura {
 
         position: absolute;
+        margin: 2% 5%;
+        padding: 0 2%;
+
     }
 
     #mensagem-usuario {
 
        text-align: center;
        position: absolute;
+
     }
     
+    #redes-sociais {
+
+
+    }
 
     .minhas-redes {
 
         position: absolute;
         display: flex;
-        width: 200px;
+        width: 100%;
         height: 65px;
         top: 0;
-        margin: 0 30% 0 30%;
+        border-radius: 0;
+        justify-content: center;
+
     }
 
 
@@ -397,19 +406,21 @@ footer {
 
         position: relative;
         top: 0;
-        margin: 10px 10px 10px 20px;
+        opacity: 0.2;
     }
 
     .linkdin {
 
         position: relative;
         top: 0;
+        opacity: 0.2;
     }
 
     .whatsapp {
+
         position: relative;
         top: 0;
-
+        opacity: 0.2;
     }
 
     .logo-alura {
@@ -461,7 +472,7 @@ footer {
     .texto-criptografado {
     
         position: absolute;
-        top: 250px;
+        top: 200px;
         width: 77%;
         height: 150px;
         box-sizing: border-box;
@@ -475,7 +486,7 @@ footer {
     .texto-sobrepor {
 
         position: absolute;
-        top: 800px;
+        top:750px;
     
         width:100%;
         height: 145px;  
@@ -520,7 +531,7 @@ footer {
     #botoes {
 
         width: 50%;
-        top: 550px;
+        top: 450px;
         text-align: center;
         display: inline-block;
         width: 100%;
@@ -550,7 +561,7 @@ footer {
         background: #E5E5E5;
         display: inline-block;
         width: 100%;
-        top:1100px;
+        top:1000px;
     }
 
 }
