@@ -1,0 +1,77 @@
+/* Local destinado as minhas redes */
+
+.minhas-redes:hover {
+
+    background: #5488c3;
+    opacity: 1;
+}
+
+.github:hover,
+.linkdin:hover,
+.whatsapp:hover {
+
+    background: #cedcea;
+    opacity: 1;
+
+}
+
+.github:active,
+.linkdin:active,
+.whatsapp:active {
+
+    background: #0ae469;
+}
+
+/* Local onde o usúario digita seu texto */
+
+#mensagem-usuario::placeholder {
+
+    color: #02387a;
+}
+
+/* Local dos botões */
+
+.copiarMensagem-mobile { 
+
+    display: none;
+}
+
+.criptografar:hover {
+
+    background: #0a3871d6;
+}
+
+.decriptografar:hover {
+
+    background: #c0cee0;
+}
+
+.copiarMensagem:hover {
+
+    background: #97b7ef29;
+}
+
+.criptografar:active {
+
+    background: #548ce7;
+}
+
+.criptografar.active .texto-criptografado{
+
+    display: block;
+}
+
+.decriptografar:active {
+
+    background: #548ce7;
+}
+
+.copiarMensagem:active {
+
+    background: #a7c0e8;
+}
+
+.copiarMensagem-mobile {
+
+    background: #a7c0e8;
+}

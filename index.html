@@ -7,6 +7,9 @@
         <title>Decodificador</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="efeitos.css">
+        <link rel="stylesheet" href="responsividade.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -24,29 +27,34 @@
             </div>
         </header>
         <section>
-            <div>
+            <div class="container-mensagem">
                 <label for="mensagem-usuario"></label>
                 <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"
                     required></textarea>
             </div>
-            <div class="div-criptografado">
-                <textarea type="text" cols="40" rows="10" class="texto-criptografado" readonly></textarea>
-                <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
-
+            <div class="container-criptografado">
+                <span class="div-criptografado">
+                    <textarea type="text" cols="40" rows="10" class="texto-criptografado" readonly></textarea>
+                    <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
+                </span>
             </div>
             <div class="texto-sobrepor" >
-                <p class="mensagem-cel"> Nenhuma mensagem encontrada</p>
-                <ul class="lista-mensagem-criptoragafa">
-                    <li><img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa"></li>
-                    <li><p class="mensagem1"> Nenhuma mensagem encontrada</p></li>
-                    <li><p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p></li>
-                 </ul>                
+                    <p class="mensagem-cel"> Nenhuma mensagem encontrada</p>
+                    <ul class="lista-mensagem-criptoragafa">
+                        <li><img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa"></li>
+                        <li><p class="mensagem1"> Nenhuma mensagem encontrada</p></li>
+                        <li><p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p></li>
+                    </ul> 
             </div>
-            <div id="botoes">  
+
+            <div class="botoes">  
                 <p id="alerta"> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem
-                acento.</p>
-                <button onclick="criptografar()" class="criptografar">Criptografar</button>
-                <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
+                    acento.</p>
+                <span  id="botoes">
+                    <button onclick="criptografar()" class="criptografar">Criptografar</button>
+                    <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
+                    <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem-mobile">Copiar</button>
+                </span> 
             </div>
         </section>
         <footer>
