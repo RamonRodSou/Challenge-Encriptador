@@ -115,10 +115,10 @@
     .texto-sobrepor {
 
         position: absolute;
-        top:750px;
+        top:820px;
     
         width:100%;
-        height: 145px;  
+        height: 50px;  
 
         background: none;
         border: none;
