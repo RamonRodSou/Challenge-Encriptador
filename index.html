@@ -10,11 +10,12 @@
         <link rel="stylesheet" href="efeitos.css">
         <link rel="stylesheet" href="responsividade.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
-    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    </head>
     <body>
         <header>
-            <img src="img/logo-alura.png" class="logo-alura" alt="Logo da Alura">
+            <div class="container-logo">
+                <img src="img/logo-alura.png" class="logo-alura" alt="Logo da Alura">
+            </div>
             <div id="redes-sociais">
                 <ul class="minhas-redes">
                     <li><a href="https://github.com/RamonRodSou"><img src="img/icon_github.png" class="github"
@@ -26,42 +27,37 @@
                 </ul>
             </div>
         </header>
-        <section>
-            <div class="container-mensagem">
+        <section class="container-mensagem">
+            <div id="div-mensagem-usuario">
                 <label for="mensagem-usuario"></label>
                 <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"
                     required></textarea>
             </div>
-            <div class="container-criptografado">
-                <span class="div-criptografado">
-                    <textarea type="text" cols="40" rows="10" class="texto-criptografado" readonly></textarea>
+            <div class="div-criptografado">
+                <span class="sobrepor-criptografado" >
+                    <p class="mensagem1"> Nenhuma mensagem encontrada</p>
+                    <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
                     <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
+                    <textarea type="text" cols="40" rows="10" class="texto-criptografado" readonly ></textarea>
                 </span>
             </div>
-            <div class="texto-sobrepor" >
-                    <p class="mensagem-cel"> Nenhuma mensagem encontrada</p>
-                    <ul class="lista-mensagem-criptoragafa">
-                        <li><img src="img/garoto_lupa.svg" class="garoto_lupa" alt="Garoto olhando uma lupa"></li>
-                        <li><p class="mensagem1"> Nenhuma mensagem encontrada</p></li>
-                        <li><p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p></li>
-                    </ul> 
-            </div>
+        </section>
 
-            <div class="botoes">  
-                <p id="alerta"> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem
+        <section class="section-botoes">  
+                <div id="div-alerta">
+                    <p> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem
                     acento.</p>
-                <span  id="botoes">
+                </div>
+                <div  id="botoes">
                     <button onclick="criptografar()" class="criptografar">Criptografar</button>
                     <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
-                    <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem-mobile">Copiar</button>
-                </span> 
-            </div>
+                  <!--  <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem-mobile">Copiar</button> -->
+                </div> 
         </section>
         <footer>
             <p class="copyright">&copy; Copyright Ramon RodSou Challenge Encriptador - 12/2022</p>
         </footer>
-        <script 
-        src="criptografar.js">
+        <script src="criptografar.js">
         </script>
     </body>
 </html>

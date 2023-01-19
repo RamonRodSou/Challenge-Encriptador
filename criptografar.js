@@ -1,8 +1,16 @@
+
 var mensagemUsuario = document.querySelector("#mensagem-usuario");
 var mensagemCriptografada = document.querySelector(".texto-criptografado");  
+var copiarMensagem = document.querySelector(".copiarMensagem");
 
-var aparenciaInicial = document.querySelector (".texto-sobrepor");
+var textoCriptografado = document.querySelector(".texto-criptografado");
 
+var sobreporCriptografado = document.querySelector(".sobrepor-criptografado");
+var mensagem1 = document.querySelector(".mensagem1");
+var mensagem2 = document.querySelector(".mensagem2");
+
+
+var tela = document.querySelector("canvas");
 
 function criptografar() {
 
@@ -23,10 +31,13 @@ function criptografar() {
     /*    Podemos esrever o replace " Substituir " também desta forma.
     .replaceAll("e","enter")
     */
-
-    aparenciaInicial.classList.add("texto-sobrepor-none"); 
     mensagemCriptografada.value = criptografado;
+    
+    mensagem1.style.display = "none";
+    mensagem2.style.display = "none";
+    textoCriptografado.style.background = "#FFFFFF";
 
+    copiarMensagem.style.display = "flex";
 }
 
     function decriptografar() {
@@ -65,5 +76,5 @@ function criptografar() {
             /*alert("Texto copiado: " + mensagemCriptografada.value);*/
     
     }
-    
-    
+
+
