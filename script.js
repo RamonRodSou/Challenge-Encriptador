@@ -5,12 +5,8 @@ var copiarMensagem = document.querySelector(".copiarMensagem");
 
 var textoCriptografado = document.querySelector(".texto-criptografado");
 
-var sobreporCriptografado = document.querySelector(".sobrepor-criptografado");
 var mensagem1 = document.querySelector(".mensagem1");
 var mensagem2 = document.querySelector(".mensagem2");
-
-
-var tela = document.querySelector("canvas");
 
 function criptografar() {
 
@@ -27,17 +23,11 @@ function criptografar() {
         .replace(/O/g, "ober")
         .replace(/U/g, "ufat");
 
-
-    /*    Podemos esrever o replace " Substituir " também desta forma.
-    .replaceAll("e","enter")
-    */
+        /*  Podemos esrever o replace " Substituir " também desta forma.
+            .replaceAll("e","enter")
+        */
     mensagemCriptografada.value = criptografado;
-    
-    mensagem1.style.display = "none";
-    mensagem2.style.display = "none";
-    textoCriptografado.style.background = "#FFFFFF";
-
-    copiarMensagem.style.display = "flex";
+    style ();
 }
 
     function decriptografar() {
@@ -61,20 +51,29 @@ function criptografar() {
             .replace(/Ufat/g, "u");
 
         mensagemCriptografada.value = descriptografa;
-
     }
 
     function copiarMensaguemCriptografada() {
           
-            /* Deixamos o texto selecionado (em azul) */
-            mensagemCriptografada.select();
-            mensagemCriptografada.setSelectionRange(0, 99999); /* Para mobile */
+        /*  Deixamos o texto selecionado (em azul) 
+        */
+        mensagemCriptografada.select();
+        mensagemCriptografada.setSelectionRange(0, 99999); /* Para mobile */
 
-            /* Copia o texto que está selecionado */
-            document.execCommand("copy");
+        /*  Copia o texto que está selecionado 
+        */
+        document.execCommand("copy");
 
-            /*alert("Texto copiado: " + mensagemCriptografada.value);*/
-    
+        /*  alert("Texto copiado: " + mensagemCriptografada.value);
+        */
     }
 
 
+    function style (){
+
+        mensagem1.style.display = "none";
+        mensagem2.style.display = "none";
+        textoCriptografado.style.background = "#FFFFFF";
+    
+        copiarMensagem.style.display = "flex";
+    }
