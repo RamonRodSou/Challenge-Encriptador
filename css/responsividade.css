@@ -57,7 +57,7 @@
 
         margin: 0 50px;
         width: 705px;
-        height: 305px;
+        height: 155px;
     }
 
     .sobrepor-criptografado{
@@ -69,7 +69,7 @@
 
         width: 699px;
         height: 250px;
-        top: 800px;
+        top: 700px;
     }
 
     .texto-criptografado {
@@ -99,7 +99,7 @@
     footer {
         
         position: absolute;
-        top:1100px;
+        top:1000px;
         
         width: 100%;
         margin: 50px auto;
