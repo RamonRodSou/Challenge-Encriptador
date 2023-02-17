@@ -2,6 +2,7 @@
 var mensagemUsuario = document.querySelector("#mensagem-usuario");
 var mensagemCriptografada = document.querySelector(".texto-criptografado");  
 var copiarMensagem = document.querySelector(".copiarMensagem");
+textoCriptografado = document.querySelector(".texto-criptografado")
 
 var textoCriptografado = document.querySelector(".texto-criptografado");
 
@@ -76,4 +77,5 @@ function criptografar() {
         textoCriptografado.style.background = "#FFFFFF";
     
         copiarMensagem.style.display = "flex";
+        textoCriptografado.style.display = "block";
     }

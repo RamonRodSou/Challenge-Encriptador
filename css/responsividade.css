@@ -1,202 +1,131 @@
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 768px) {
 
-    .logo-alura {
+    /* Local onde aparece a mensagem criptografada */
 
-        position: absolute;
-        top: 0;
-        margin: 1% 5%;
-        padding: 0 2%;
+    .div-criptografado,.sobrepor-criptografado, .texto-criptografado {
+        
+        width: 43.6875rem;
+        height: 15.625rem;    
     }
 
-    /* Local das minhas redes sóciais para contato */
 
-    .minhas-redes {
-
-        width: 100%;
-        height: 65px;
-        top: 0;
-        border-radius: 0;
-      
-        display: flex;
+/* Local destinado aos botões */
+    
+    #botoes {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .github, .linkdin, .whatsapp {
-
-        opacity: 0.2;
-    }
-
-    /* Local onde o usúario digita seu texto */
-
-    .container-mensagem {
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #div-mensagem-usuario {
-
-        width: 700px;
-        margin:0 auto;
-    }
-
-    #mensagem-usuario{
-
-        width: 700px;
-    }
-    
-    /* Local onde aparece a mensagem criptografada */
-
-    .div-criptografado {
-
-        top: 800px;
-
-        margin: 0 50px;
-        width: 705px;
-        height: 155px;
-    }
-
-    .sobrepor-criptografado{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-
-        width: 699px;
-        height: 250px;
-        top: 700px;
-    }
-
-    .texto-criptografado {
-
-        background: hsla(0, 0%, 100%, 0);
-
-        width: 700px;
-        height: 200px;
-    }
-
-    /* Local destinado aos botões*/
-    #botoes{
- 
-        width: 700px;
     }
     
     #div-alerta {
-        
-        width: 700px;
-    }
-    .copiarMensagem {
-
-        position: absolute;
-        top:240px;
-    }
-
-    footer {
-        
-        position: absolute;
-        top:1000px;
-        
-        width: 100%;
-        margin: 50px auto;
-    }
-}
-
-@media screen and (max-width: 750px){
-
-    /* Local onde o usúario digita seu texto */
-
-    #div-mensagem-usuario, .div-criptografado{
-
-        width: 350px;
-    }
-
-    #mensagem-usuario{
     
-        width: 350px;
-        height: 100px;
+        width: 37.5rem;
+        font-size: 0.9rem;
+        justify-content: first baseline;
+        font-family: 'Roboto', sans-serif;
     }
-
-    /* Local onde aparece a mensagem criptografada */
-
-    .sobrepor-criptografado{
-
-        margin: 150px 0;
-        width: 350px;
-        height: 250px;
-        background: none;
-    }
-
-    .texto-criptografado {
-
-        width: 100%;
-        height: 100px;
-    }
-
-    .mensagem1, .mensagem2 {
-
-        display: none;
-    }
-
-    /* Local destinado aos botões*/
-
-    #botoes{
- 
-        width: 350px;
-        flex-direction: column;
-    }
-
-    #div-alerta {
-        
-        width: 350px;
-    }
-
+    
     .criptografar {
-        
-        padding: 0px;
-        gap: 0px;
+    
+        padding: 1.5rem;
+        margin-right: 2rem;
     }
     
     .decriptografar {
+        width: 20rem;
+
+        padding: 1.5rem;
+    }
     
-        padding: 0px;
-        gap: 0px;
-    }
-
-    .copiarMensagem {
-
-        position: unset;
-    }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width: 1024px) {
 
-    #div-mensagem-usuario, .div-criptografado, #mensagem-usuario, .sobrepor-criptografado, #botoes, #div-alerta {
+    body{
 
-        width: 300px;
+        width: 80%;
+        margin: 0 auto;
     }
-
-    .criptografar, .decriptografar, .copiarMensagem {
-
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 300px){
 
     .logo-alura {
 
-        display: none;
+        position: relative;
+
+    }
+        /*   Local das minhas redes sóciais para contato */
+
+    .minhas-redes {
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        position: absolute;
+        
+        width: 3.75rem;;
+        height: 18.75rem;
+        top: 20%;
+        transform: 100ms;
+        border-radius: 30px;
     }
 
-    #div-mensagem-usuario, .div-criptografado, #mensagem-usuario, .sobrepor-criptografado, #botoes, #div-alerta {
+    .github,.linkdin ,.whatsapp{
 
-        width: 200px;
+        opacity: 0.3;
     }
 
+    /* Local onde o usúario digita seu texto */
 
+    .container {
+
+        flex-direction: row;
+        align-items: flex-start;
+        height: 40rem;
+
+    }
+    .container-msg-botao {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .container-mensagem {
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+
+        height: 20.9rem;
+
+    }
+
+    #mensagem-usuario{
+
+        display: block;
+        margin: 8%;
+
+        width: 400px;
+        height: 3rem;
+    }
+
+    /* Local onde aparece a mensagem criptografada */
+
+    .div-criptografado, .sobrepor-criptografado,.texto-criptografado {
+
+        width: 20rem;
+        height: 35.9rem;
+    }
+
+    .section-botoes {
+
+        justify-content: flex-start;
+    }
+
+    .sobrepor-criptografado {
+
+        background: url(../img/garoto_lupa.svg);
+        background-repeat: no-repeat;
+        background-position: 0 100px;
+    }
 }

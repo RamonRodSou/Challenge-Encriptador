@@ -1,84 +1,92 @@
 body {
 
     background: #E5E5E5;
-    margin: 0 auto;
-    width: 100%;
 }
 
-.container-logo{
-
-    width:100%;
-    height: 150px;
-    margin: 0 auto;
-}
-
-.logo-alura{
+.logo-alura {
 
     position: absolute;
-    left: 3%;
-    top: 5%;
+    top: 0;
+    margin: 1% 5%;
+    padding: 0 2%;
 }
 
-    /* Local das minhas redes sóciais para contato */
+/* Local das minhas redes sóciais para contato */
 
 .minhas-redes {
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
-    position: absolute;
-    
+    gap: 20px;
+        
     background: #5488c32a;
-    width:60px;
-    height: 300px;
-    top: 20%;
+    width: 100%;
+    height: 4.0625rem;
+    top: 0;
+    border-radius: 0;
     transform: 100ms;
-    border-radius: 30px;
     transition: 1s background;
 }
 
 .github,.linkdin ,.whatsapp{
 
-    width: 40px;
+    width: 2.5rem;
     border: 1px solid rgba(6, 38, 98, 0.468);
     border-radius: 5px;
     transition: 1s background;
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
-    /* Local onde o usúario digita seu texto */
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50rem;
+}
+
+
+/* Local onde o usúario digita seu texto */
+
+.container-msg-botao{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    flex-grow: 5;
+}
 
 .container-mensagem {
 
     display: flex;
-    justify-content: space-between;
-    padding: 3em 0;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 
-#div-mensagem-usuario {
+.div-criptografado{
 
-    width: 600px;
-    margin:0 auto;
+    flex-grow: 2;
 }
 
 #mensagem-usuario{
-
-    display: block;
-
+    
     resize: none;
     text-transform: lowercase;
     overflow: auto;
 
-    width: 680px;
-    height: 48px;
+    height: 3rem;
+    width: 16rem;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 150%;
 
     color: #0A3871;
@@ -87,13 +95,21 @@ body {
     border: none;
 }
 
-    /* Local onde aparece a mensagem criptografada */
+/* Local onde aparece a mensagem criptografada */
 
 .div-criptografado {
 
-    margin: 0 50px;
-    width: 300px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    
+    width: 18rem;
+    height: 10rem; 
+    background: #ffffff;
+
+    border-radius: 2rem;
+    border: none;   
 }
 
 .sobrepor-criptografado{
@@ -103,23 +119,16 @@ body {
     justify-content: end;
     align-items: center;
 
-    position: absolute;
 
-    width: 320px;
-    height: 655px;
-    top: 40px;
-
-    background: #ffffff;
-
-    border-radius: 32px;
-    border: none;
 }
 
 .texto-criptografado {
-    
-    position: absolute;
 
-    top:0;
+    display:none;
+    background: hsla(0, 0%, 100%, 0);
+
+    width: 18rem;
+    height: 10rem; 
 
     resize: none;
     text-transform: lowercase;
@@ -130,16 +139,19 @@ body {
     font-size: 1.5rem;
     color: #0A3871;
 
-    padding: 25px 0;
-    width: 320px;
-    height: 605px;
+    padding: 1.56rem 0;
+
 
     font-family: 'Roboto', sans-serif;
 
-    border-radius: 32px;
+    border-radius: 2rem;
     border: none;
     z-index: 0;
+
 }
+
+
+/* Local destinado aos botões*/
 
 .mensagem1 {
 
@@ -150,62 +162,53 @@ body {
 
     text-align: center;
     margin: 3rem 3rem;
-    width: 320px;
+    width: 20rem;
 }
 
 .mensagem2 {
 
     text-align: center;
     margin: 0 3rem;
-    width: 320px;
+    width: 16rem;
     font-family: 'Roboto', sans-serif;
     margin: 0 3rem 3rem;
 
 }
 
-    /* Local destinado aos botões*/
+/* Local destinado aos botões */
 
 .section-botoes {
 
-    padding: 3em 0;
-    display: block;
-}
-
-#botoes{
-
-    width:1000px;
-    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    flex-grow:1;
 }
 
 #div-alerta {
 
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-
+    font-size: 0.9rem;
+    justify-content: first baseline;
     font-family: 'Roboto', sans-serif;
 }
 
-.criptografar {
+#botoes {
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
 
-    padding: 24px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
+.criptografar {
+    
+    width: 17.5rem;
+    height: 4.1875rem;
 
     background: #0A3871;
-    border-radius: 24px;
+    border-radius: 1.5rem;
 
     font-size: 1.3rem;
     color: #ffffff;
-    margin-right: 2rem;
     font-family: 'Roboto', sans-serif;
 
     cursor: pointer;
@@ -214,20 +217,12 @@ body {
 }
 
 .decriptografar {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    padding: 24px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
+    
+    width: 17.5rem;
+    height: 4.1875rem;
 
     background: #e9eaec;
-    border-radius: 24px;
+    border-radius: 1.5rem;
 
     font-size: 1.3rem;
     color: #0A3871;
@@ -240,28 +235,24 @@ body {
 
 .copiarMensagem {
 
+    position: absolute;
     display: none;
-
-    flex-direction: row;
-    justify-content: center;
+    
     align-items: center;
-    
-    
-    right: 200px;
-    gap: 8px;
+    justify-content: center;
 
-    width: 300px;
-    height: 67px;
 
-    margin: 30px 0;
+    width: 17.75rem;
+    height: 4.1875rem;
+
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400px;
-    font-size: 1.3rem;
-    text-align: center;
+    font-weight: 25.0rem;
+    font-size: 2.0rem;
 
-    border-radius: 24px;
+
+    border-radius: 1.5rem;
     border-color:none;
 
     color: #0A3871;
@@ -271,16 +262,10 @@ body {
     z-index: 1;
 }
 
-footer {
+.copyright{
 
     text-align: center;
-	padding: 40px 0;
-}
-
-.copyright {
-      
-    justify-content: space-between;
+    padding: 2.5rem 0;
     color: #0A3871;
-    font-size: 13px;
-    margin: 20px 0 0;
+    font-size: 0.8125rem;
 }

@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" intial-scale="1.0">
 
         <title>Decodificador</title>
         <link rel="stylesheet" href="css/reset.css">
@@ -28,35 +28,38 @@
                 </ul>
             </div>
         </header>
-        <section class="container-mensagem">
-            <div id="div-mensagem-usuario">
-                <label for="mensagem-usuario"></label>
-                <textarea type="text" cols="40" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"
-                    required></textarea>
-            </div>
-            <div class="div-criptografado">
-                <span class="sobrepor-criptografado" >
+        <main class="container">
+            <section class="container-msg-botao">
+                <div class="container-mensagem">
+                    <div id="div-mensagem-usuario">
+                        <label for="mensagem-usuario"></label>
+                        <textarea type="text" cols="30" rows="10" id="mensagem-usuario" placeholder="Digite seu texto"
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="section-botoes">  
+                    <div id="div-alerta">
+                        <p> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem
+                        acento.</p>
+                    </div>
+                    <div  id="botoes">
+                        <button onclick="criptografar()" class="criptografar">Criptografar</button>
+                        <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
+                    <!--  <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem-mobile">Copiar</button> -->
+                    </div> 
+                </div>
+            </section>
+            <section class="div-criptografado">
+                <div class="sobrepor-criptografado" >
                     <p class="mensagem1"> Nenhuma mensagem encontrada</p>
                     <p class="mensagem2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-                    <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
                     <textarea type="text" cols="40" rows="10" class="texto-criptografado" readonly ></textarea>
-                </span>
-            </div>
-        </section>
-
-        <section class="section-botoes">  
-                <div id="div-alerta">
-                    <p> <img src="img/esclamacao.png" alt="Icone de esclamacao">Apenas letras minúsculas e sem
-                    acento.</p>
+                    <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem">Copiar</button>
                 </div>
-                <div  id="botoes">
-                    <button onclick="criptografar()" class="criptografar">Criptografar</button>
-                    <button onclick="decriptografar()" class="decriptografar">Decriptografar</button>
-                  <!--  <button onclick="copiarMensaguemCriptografada()" class="copiarMensagem-mobile">Copiar</button> -->
-                </div> 
-        </section>
-        <footer>
-            <p class="copyright">&copy; Copyright Ramon RodSou Challenge Encriptador - 12/2022</p>
+            </section>
+        </main>
+        <footer  class="copyright">
+            <p>&copy; Copyright Ramon RodSou Challenge Encriptador - 12/2022</p>
         </footer>
         <script src="script.js">
         </script>
